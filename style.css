@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    border: 2px solid black;
+    border-radius: 15px;
+
+    /* padding: 60px; */
+
+}
+.header2{
+    border: 2px solid black;
+    padding: 60px;
+    border-radius: 15px;
+    width: 68%;
+}
+
+.firstRow>button {
+
+    background: #76d1ff;
+    color: black;
+    border: 2px solid black;
+}
+
+body {
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainContainer {
+    border-radius: 15px;
+    background: #191c1e;
+    padding: 10px;
+}
+
+button {
+    padding: min(1rem,3vw);
+    width: 70px;
+    width: min(5rem,14vw);
+    margin: 7px;
+    border-radius: min(1rem,3vw);
+    font-size: min(1rem,3vw);
+    background: #374955;
+    color: white;
+    box-shadow: 0 7px 2px 0px #76d1ff;
+    border: 2px solid #76d1ff;
+}
+
+.FifthRow>button:last-child {
+    width: 160px;
+    width: min(10rem,35vw)
+}
+
+.mainContainer div>button:last-child {
+    background: #76d1ff;
+    color: black;
+    border: 2px solid black;
+}
+/* new */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* pseudo-element ke liye zaroori */
+    overflow: hidden; 
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('clr.png') no-repeat center center;
+    background-size: cover;
+    filter: blur(2px); /* blur ka amount, adjust kar sakte ho */
+    z-index: -1;       /* behind all content */
+}
+
+.mainContainer {
+    border-radius: 15px;
+    background: #191c1e;
+    padding: 15px;
+}
+
+.header input {
+    width: 100%;
+    padding: 20px;
+    font-size: 22px;
+    border-radius: 15px;
+    border: 2px solid black;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 15px;
+    width: 70px;
+    margin: 7px;
+    border-radius: 10px;
+    font-size: 18px;
+    background: #374955;
+    color: white;
+    box-shadow: 0 5px 2px 0px #76d1ff;
+    border: 2px solid #76d1ff;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.operator {
+    background: #76d1ff;
+    color: black;
+    border: 2px solid black;
+}
+
+.zero {
+    width: 160px;
+}
